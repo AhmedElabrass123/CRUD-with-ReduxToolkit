@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react';
+import Posts from './components/Posts';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   <div className='text-center'>
+    <h2 className='text-[17px] font-semibold mb-[40px]
+    bg-slate-500 text-white p-[10px] capitalize sm:text-[25px]'>CRUD APP WITH REDUX TOOLKIT</h2>
+     <Posts/>
+   </div>
+  )
 }
 
-export default App;
+export default App
